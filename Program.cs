@@ -75,13 +75,36 @@
 // Console.WriteLine($"В 2030 году вам будет: {2030 - birthYearConvert} лет");
 
 
+// Console.WriteLine();
+// Console.WriteLine("Ввод чисел: TryParse");
+
+// Console.Write("Введите количество прочитанных книг за семестр: ");
+// string booksInput = Console.ReadLine();
+
+// bool wasSuccessful = int.TryParse(booksInput, out int booksCount);
+
+// Console.WriteLine($"Удалось преобразовать: {wasSuccessful}");
+// Console.WriteLine($"Значение переменной booksCount: {booksCount}");
+
+
 Console.WriteLine();
-Console.WriteLine("Ввод чисел: TryParse");
+Console.Write("Введите имя и фамилию: ");
+string studentName = Console.ReadLine();
+Console.Write("Введите группу: ");
+string studentGroup = Console.ReadLine();
+Console.Write("Введите год рождения: ");
+int birthYear = int.Parse(Console.ReadLine());
+Console.Write("Введите средний балл: ");
+double studentGpa = double.Parse(Console.ReadLine());
+Console.Write("Введите любимую букву: ");
+char favoriteLetter = Console.ReadLine()[0];
+int ageIn2030 = 2030 - birthYear;
+bool isGoodGpa = studentGpa >= 4.0;
 
-Console.Write("Введите количество прочитанных книг за семестр: ");
-string booksInput = Console.ReadLine();
-
-bool wasSuccessful = int.TryParse(booksInput, out int booksCount);
-
-Console.WriteLine($"Удалось преобразовать: {wasSuccessful}");
-Console.WriteLine($"Значение переменной booksCount: {booksCount}");
+Console.WriteLine();
+Console.WriteLine("    Анкета");
+Console.WriteLine($"{studentName}, группа {studentGroup}");
+Console.WriteLine($"Год рождения: {birthYear} (в 2030 будет {ageIn2030} лет)");
+Console.WriteLine($"Средний балл: {studentGpa}");
+Console.WriteLine($"Балл >= 4.0: {isGoodGpa}");
+Console.WriteLine($"Любимая буква: {favoriteLetter}");
