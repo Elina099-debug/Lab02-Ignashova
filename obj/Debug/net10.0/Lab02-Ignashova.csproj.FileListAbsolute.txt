@@ -12,3 +12,4 @@ C:\Users\elvix\Documents\Lab02-Ignashova\obj\Debug\net10.0\refint\Lab02-Ignashov
 C:\Users\elvix\Documents\Lab02-Ignashova\obj\Debug\net10.0\Lab02-Ignashova.pdb
 C:\Users\elvix\Documents\Lab02-Ignashova\obj\Debug\net10.0\Lab02-Ignashova.genruntimeconfig.cache
 C:\Users\elvix\Documents\Lab02-Ignashova\obj\Debug\net10.0\ref\Lab02-Ignashova.dll
+C:\Users\elvix\Documents\Lab02-Ignashova\obj\Debug\net10.0\Lab02-Ignashova.sourcelink.json
