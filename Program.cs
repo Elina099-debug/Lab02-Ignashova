@@ -122,11 +122,26 @@
 
 
 
-Console.WriteLine();
-Console.Write("Введите фамилию: ");
-string surname = Console.ReadLine();
-Console.Write("Введите имя: ");
-string firstNameInput = Console.ReadLine();
-char nameInitial = firstNameInput[0];
+// Console.WriteLine();
+// Console.Write("Введите фамилию: ");
+// string surname = Console.ReadLine();
+// Console.Write("Введите имя: ");
+// string firstNameInput = Console.ReadLine();
+// char nameInitial = firstNameInput[0];
 
-Console.WriteLine($"{surname} {nameInitial}.");
+// Console.WriteLine($"{surname} {nameInitial}.");
+
+
+Console.WriteLine();
+
+Console.Write("Введите целое число: ");
+bool intNum = int.TryParse(Console.ReadLine(), out int intValue);
+Console.WriteLine($"int: удалось = {intNum}, значение = {intValue}");
+
+Console.Write("Введите дробное число: ");
+bool doubleNum = double.TryParse(Console.ReadLine(), out double doubleValue);
+Console.WriteLine($"double: удалось = {doubleNum}, значение = {doubleValue}");
+
+Console.Write("Введите дату: ");
+bool dateTod = DateTime.TryParse(Console.ReadLine(), out DateTime dateValue);
+Console.WriteLine($"DateTime: удалось = {dateTod}, значение = {dateValue}");
